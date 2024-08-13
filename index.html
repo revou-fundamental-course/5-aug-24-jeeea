@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Kalkulator BMI</h1>
-    <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menadakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
+    <!-- <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p> -->
     
     <div class="container">
         <div class="input-section">
@@ -33,34 +33,33 @@
             <button onclick="resetForm()" class="reset">Reset</button>
             </div>
             
-            <h2>Keunggulan fitur</h2>
-            <ol>
-                <li>Menghitung berat badan</li>
-                <li>Menentukan kategori berat badan ideal atau tidak</li>
-                <li>Mempersiapkan program penurunan berat badan</li>
-            </ol>
-            
-            <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh menggunakan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
-            
-            <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh atau BMI dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = kg/M2.</p>
+            <h2 class="title-desc">Mengapa penting untuk mengetahui BMI?</h2>
+            <p>(Indeks Massa Tubuh) atau BMI adalah cara sederhana untuk memeriksa risiko penyakit terkait lemak tubuh Anda. Hidup dengan kelebihan berat badan atau obesitas dikaitkan dengan peningkatan risiko kematian dan penyakit atau kondisi lainnya. Umumnya, semakin tinggi BMI Anda, semakin besar risiko terkena penyakit kronis terkait obesitas lainnya.</p>
+
+            <p>Kalkulator ini akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M².</p>
+
+            <h2 class="title-desc">Keterbatasan BMI</h2>
+            <p>BMI adalah pengukuran yang sederhana dan objektif, tetapi dapat menyesatkan dalam kasus tertentu dan untuk beberapa kelompok orang. Penelitian telah menunjukkan bahwa BMI kurang akurat dalam memprediksi risiko penyakit pada orang yang lebih tua, atlet, orang yang tinggi atau pendek, dan mereka yang memiliki tipe tubuh lebih berotot. Misalnya, atlet atau binaragawan memiliki lebih banyak otot dan berat badan lebih banyak, yang membuat BMI mereka lebih tinggi.</p>
+
+            <p>Penting untuk diingat bahwa hidup dengan obesitas tidak selalu berarti Anda tidak sehat, sama seperti memiliki berat badan 'normal' tidak berarti Anda sehat. BMI Anda tidak menentukan Anda, tetapi mengetahui dan memahami BMI Anda dapat menjadi alat yang ampuh untuk bertanggung jawab atas kesehatan Anda sendiri.</p>
         </div>
         
         <div class="result-section">
             <h2>Hasil</h2>
-            <div id="result" class="result">
+            <div id="result" class="result-container">
                 <h3>Berat badan <span id="category"></span></h3>
                 <h1 id="bmi-result"></h1>
                 <p id="bmi-description"></p>
-                <button onclick="downloadResult()" class="download">Download Hasil BMI</button>
+                <button onclick="downloadResult()" class="download">Download hasil BMI</button>
             </div>
 
             <div>
-                <p>
-                    BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.
-                </p>
+                <p><b>Disclaimer: </b>Informasi ini tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. jika Anda memiliki pertanyaan mengenai kesehatan Anda, disarankan untuk menghubungi atau berkonsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda dengan tenaga profesional di bidangnya.</p>
+
+                <p>Terlepas dari BMI Anda, para profesional kesehatan merekomendasikan memiliki diet dan gaya hidup sehat. Konsultasikan dengan dokter Anda tentang berat badan dan kesehatan Anda dan evaluasi tindakan apa yang mungkin diperlukan.</p>
             </div>
             
-            <div class="diseases">
+            <div class="klasifikasi">
                 <h3>Klasifikasi BMI</h3>
                 <table>
                     <tr>
@@ -98,12 +97,18 @@
                 </table>
             </div>
             
-            <button onclick="consultNutrition()" class="consult">Konsultasi Ahli Gizi Via Aplikasi</button>
-            <button onclick="registerOnline()" class="regist">Registrasi Online Ahli Gizi</button>
+            <button onclick="consultNutrition()" class="consult">Konsultasi ahli gizi via aplikasi</button>
+            <button onclick="registerOnline()" class="regist">Registrasi online ahli gizi</button>
             
             <h3>Download Aplikasi</h3>
-            <img src="/api/placeholder/150/50" alt="Google Play">
-            <img src="/api/placeholder/150/50" alt="App Store">
+            <img src="Asset\png playstore.png" alt="Google Play" class="gplay">
+            <img src="Asset\png appstore.png" alt="App Store" class="appstore">
         </div>
     </div>
 </body>
+
+<footer>
+    <div class="footer">
+        made by jeeaa
+    </div>
+</footer>
