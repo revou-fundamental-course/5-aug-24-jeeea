@@ -60,6 +60,7 @@ input[type=number]{
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 3px 3px 5px #000000;
+    transition-duration: 0.4s;
 }
 
 .reset, .regist{
@@ -76,6 +77,23 @@ input[type=number]{
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 3px 3px 5px #000000;
+    transition-duration: 0.4s;
+}
+
+.calculate:hover, .download:hover, .consult:hover{
+    background-color: #008a67;
+}
+.calculate:active, .download:active, .consult:active{
+    background-color: #008a67;
+    transform: scale(0.95);
+}
+
+.reset:hover, .regist:hover{
+    background-color: #5c5c5c;
+}
+.reset:active, .regist:active{
+    background-color: #5c5c5c;
+    transform: scale(0.95);
 }
 
 .result-container {
@@ -91,8 +109,8 @@ input[type=number]{
 }
 
 img{
-    width: 130px;
-    height: 65px;
+    width: 160px;
+    height: 85px;
     cursor: pointer;
 }
 
@@ -103,6 +121,15 @@ img{
     padding: 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 4px black;
+}
+
+.download-button{
+    text-align: center;
+    margin-top: 50px;
+}
+
+a{
+    color: white;
 }
 
 
