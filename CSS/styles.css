@@ -19,7 +19,6 @@ th, td{
 }
 
 .container {
-    margin: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -133,7 +132,6 @@ img{
 a{
     color: white;
 }
-
 
 /* tampilan smartphone */
 @media screen and (max-width: 768px) {
