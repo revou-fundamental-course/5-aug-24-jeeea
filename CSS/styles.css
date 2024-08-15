@@ -142,7 +142,7 @@ a{
     }
 
     .input-container {
-        max-width: 650px;
+        max-width: 500px;
     }
 
     input[type="number"], input[type="radio"] + label {
