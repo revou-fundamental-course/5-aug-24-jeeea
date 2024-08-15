@@ -19,6 +19,7 @@ th, td{
 }
 
 .container {
+    margin: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -81,18 +82,18 @@ input[type=number]{
 }
 
 .calculate:hover, .download:hover, .consult:hover{
-    background-color: #008a67;
+    background-color: #E1306C;
 }
 .calculate:active, .download:active, .consult:active{
-    background-color: #008a67;
+    background-color: #E1306C;
     transform: scale(0.95);
 }
 
 .reset:hover, .regist:hover{
-    background-color: #5c5c5c;
+    background-color: #414141;
 }
 .reset:active, .regist:active{
-    background-color: #5c5c5c;
+    background-color: #414141;
     transform: scale(0.95);
 }
 
@@ -119,7 +120,8 @@ img{
     color: white;
     text-align: center;
     padding: 10px;
-    border-radius: 5px;
+    margin: auto;
+    border-radius: 10px;
     box-shadow: 2px 2px 4px black;
 }
 
@@ -132,4 +134,85 @@ a{
     color: white;
 }
 
+/* tampilan desktop */
+@media screen and (min-width: 769px) {
 
+    .input-section, .result-section {
+        width: 50%;
+    }
+
+    .input-container {
+        max-width: 650px;
+    }
+
+    input[type="number"], input[type="radio"] + label {
+        width: 100%;
+    }
+
+    .p1{
+        margin-right: 45px
+    }
+}
+
+/* tampilan smartphone */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .input-section, .result-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .input-container {
+        margin-bottom: 20px;
+    }
+
+    input[type="number"], input[type="radio"] + label {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    .download-button img {
+        width: 150px;
+        margin: 5px;
+    }
+}
+
+/* inta icon */
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.instagram-link:hover {
+    color: #E1306C;  
+}
+
+.instagram-link i {
+    margin-right: 5px;
+    font-size: 1.2em;
+}
