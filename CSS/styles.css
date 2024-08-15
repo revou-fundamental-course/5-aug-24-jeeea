@@ -176,6 +176,11 @@ a{
         width: 150px;
         margin: 5px;
     }
+
+    .footer{
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 /* inta icon */
